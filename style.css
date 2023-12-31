@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  /* outline: 2px solid black; */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image: repeating-linear-gradient(0deg, #9381ff, #9381ff 1px, #e5e5f7 1px, #e5e5f7);
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.container{
+    margin: 5%;
+    position: relative;
+    z-index: 1; 
+}
+
+.title{
+    text-align: center;
+    background-color: #9381ff;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img{
+    object-fit: cover;
+    width:100%; height: 100%; border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-grp{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.card{
+    width:300px;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card h3{
+    color: white;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.card-img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    padding:10px;
+}
+
+.card form{
+    text-align: center;
+    border-radius: 10px;
+  
+
+}
+.card textarea{
+    width: 280px;
+    padding:5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border:none;
+    resize: none;
+    outline: none;
+}
+
+.card button{
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.card button:hover{
+   background-color: #fcf6bd;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#boy{
+    background-color: #70d6ff;
+}
+#girl{
+    background-color: #ff70a6;
+}
+#lgbt{
+    background-color: #ffd670;
+}
